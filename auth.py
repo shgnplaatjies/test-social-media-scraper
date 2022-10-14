@@ -11,7 +11,7 @@ def authenticateConfig():
 
         api = tweepy.API(auth) # Setting these properties true will make the api to automatically wait for rate limits to replenish
 
-        print("Authentication successful" + " " + api.get_user()) # Prints the name of the authenticated user
+        print("Authentication successful") # Prints the name of the authenticated user
 
         return api # Return the api object to caller
     except tweepy.HTTPException as e:
